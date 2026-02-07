@@ -1,13 +1,9 @@
 seo:
-  title: "Emma Thompson - UX/UI Designer"
-  description: "Welcome to my portfolio! I'm Emma Thompson, a UX/UI designer and front-end developer based in Boston. I specialize in creating user-centered digital experiences that are both beautiful and functional."
-title: "Hey, I'm Emma Thompson UX/UI Designer"
-description: "I craft intuitive digital experiences where design meets functionality. Based in Boston, bringing ideas to life through code and creativity."
+  title: "Hey, I'm Bara game Developer"
+  description: "Welcome to my portfolio! Hey, I'm Bara game Developer. I specialize in create digital experiences and I am a beginner game developer and I am an independent programmer in php and gdscript programming languages."
+title: "Hey, I'm Bara game Developer"
+description: "I create digital experiences and I am a beginner game developer and I am an independent programmer in php and gdscript programming languages."
 hero:
-  links:
-    - label: "Use this template"
-      to: https://github.com/nuxt-ui-templates/portfolio
-      color: "neutral"
   images:
     - src: /hero/random-1.avif
       alt: Random Image 1
@@ -30,32 +26,40 @@ hero:
 about:
   title: "About Me"
   description: |
-    As a UX/UI designer and front-end developer with 6 years of experience, I leverage my Boston University Interactive Design degree to craft user-centered digital experiences.
-    My approach blends creative strategy with technical expertise, transforming concepts into functional, purposeful digital products that seamlessly integrate design and technology.
+   As a budding game developer and independent programmer, I'm building a solid foundation in game development with a focus on exploring ideas, game mechanics, and player experience. I'm proficient in PHP for web-based logic and systems development, and GDScript as the primary language for building games using the Godot Engine.
+
+    As an independent developer, I'm accustomed to working independently—from concept design and coding to iteration and debugging. My approach emphasizes continuous learning, technical experimentation, and the application of user-centered design principles to game worlds, with the goal of creating simple, functional, yet meaningful gaming experiences.
 experience:
   title: Work Experience
   items:
     - position: "Brand Designer at"
-      date: "2023 - Present"
+      date: "2025 - Present"
       company:
-        name: Nuxt
-        logo: "i-simple-icons-nuxtdotjs"
-        url: "https://nuxt.com"
-        color: "#00DC82"
+        name: Laravel
+        logo: "i-simple-icons-laravel"
+        url: "https://laravel.com"
+        color: "#8B0000"
     - position: "Assets Designer at"
-      date: "2022 - 2023"
+      date: "2025 - present"
       company:
-        name: Raycast
-        logo: "i-simple-icons-raycast"
-        url: "https://raycast.com"
+        name: Blender
+        logo: "i-simple-icons-blender"
+        url: "https://blender.org"
         color: "#FF6363"
-    - position: "Senior UX/UI Designer at"
-      date: "2020 - 2021"
+    - position: "NLFTs comunity at"
+      date: "present"
       company:
-        name: Linear
-        logo: "i-simple-icons-linear"
-        url: "https://linear.app"
-        color: "#5E6AD2"
+        name: NLFTs
+        logo: "https://avatars.githubusercontent.com/u/252723835?s=200&v=4"
+        url: "https://github.com/NLFTs"
+        color: "#000080"
+    - position: "Join Github at"
+      date: "2024 - present"
+      company:
+        name: GitHub
+        logo: "i-simple-icons-github"
+        url: "https://github.com"
+        color: "#00000"
 testimonials:
   - quote: "Emma's approach to UX design completely transformed our product. She has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics."
     author:
