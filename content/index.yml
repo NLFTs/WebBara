@@ -53,7 +53,7 @@ experience:
         logo: "https://avatars.githubusercontent.com/u/252723835?s=200&v=4"
         url: "https://github.com/NLFTs"
         color: "#000080"
-    - position: "Join Github at"
+    - position: "Join Community programmer at"
       date: "2024 - present"
       company:
         name: GitHub
@@ -93,7 +93,7 @@ faq:
       questions:
         - label: What services do you offer?
           content: |
-            I specialize in UX/UI design and front-end development. This includes user research, wireframing, interactive prototyping, creating intuitive user interfaces, building responsive websites and web applications (especially with Vue.js/Nuxt.js), and developing design systems. My goal is to create seamless digital experiences from concept to deployment.
+            I specialize in game development.
         - label: What is your design process like?
           content: |
             My process is collaborative and iterative, typically involving stages like Discovery & Research, Ideation & Prototyping, User Testing, Visual Design, and close collaboration with development teams during implementation. I tailor the process based on project needs, always focusing on user-centered solutions.
@@ -121,4 +121,4 @@ faq:
             I love the challenge of solving complex problems through design and technology. It's incredibly rewarding to see people interact with something I've created and find it genuinely useful and easy to navigate. Bridging the gap between user needs and technical possibilities is what truly excites me.
         - label: What are your hobbies outside of work?
           content: |
-            When I'm not designing or coding, I enjoy exploring Boston's neighborhoods, trying out new coffee shops, and hiking in the nearby reservations. I'm also passionate about photography and occasionally contribute to open-source projects.
+            When I'm not designing or coding, I enjoy playing game and watching streaming.

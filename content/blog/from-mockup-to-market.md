@@ -1,160 +1,115 @@
 ---
-title: "From Mockup to Market: My End-to-End Product Design Process"
-description: A detailed breakdown of my iterative design methodology, from
-  initial research to final handoff, with practical tips for designers at every
-  stage.
+title: "From my first idea to Learning games : The process of making my first game"
+description: A detailed explanation of my game creation method, from initial research to final delivery, with practical tips for ideas at every stage.
 date: 2025-04-23
 image: https://images.pexels.com/photos/1050312/pexels-photo-1050312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
-minRead: 8
+minRead: 10
 author:
-  name: Emma Thompson
+  name: Marsha Bara Suwarna
   avatar:
-    src: https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: Emma Thompson
+    src: https://avatars.githubusercontent.com/u/228843429?v=4&size=64
+    alt: Marsha Bara Suwarna
 ---
 
-Creating successful digital products isn't about following a rigid formula—it's about developing a flexible framework that adapts to the unique challenges of each project. After refining my approach across dozens of products, I've developed a process that consistently delivers results while leaving room for creativity and iteration.
+Creating a successful game isn't about selling an idea—it's about developing a creative mindset that adapts to the unique challenges of each project. After refining my approach across dozens of projects, I've developed a process that consistently delivers results while still allowing room for creativity and iteration.
 
-In this article, I'll walk through my end-to-end design process, from initial discovery to developer handoff, using my recent work on the EcoTrack application as a case study.
+In this article, I'll cover my game creation process, from initial discovery to handover to developers, using my recent work on the Squid app as a case study.
 
-## Phase 1: Discovery & Research
-
-Every great product starts with understanding the problem it's trying to solve. For EcoTrack, our challenge was creating an engaging way for users to track their environmental impact without feeling overwhelmed by guilt or complex data.
+### Phase 1: Discovery & Technical Research
+Every great game starts with a loop. For Squid, our challenge was to build a compelling web-based experience that felt snappy and responsive, avoiding the "laggy browser game" stigma.
 
 ### User Interviews
+I conducted sessions with seven core gamers to understand their habits. A major pain point was "friction"—players hate waiting for long loading screens just to play a quick session.
 
-I began by conducting interviews with 12 potential users across different demographics, focusing on their current habits and attitudes toward sustainability. These conversations revealed a crucial insight: most people wanted to make environmentally friendly choices but felt paralyzed by the complexity of calculating their impact.
+"I want a game that's fun and accessible instantly, whether I'm on my phone or desktop." — Interview participant
 
-> "I care about the environment, but I have no idea if using a paper bag is actually better than plastic, or if my reusable water bottle makes any difference." — Interview participant
-
-### Competitive Analysis
-
-Next, I analyzed existing sustainability apps, creating a feature comparison matrix to identify gaps and opportunities. Most competitors focused on carbon footprint calculations but failed to provide actionable guidance or positive reinforcement.
+### Tech Stack Benchmarking
+I analyzed existing web games and chose Nuxt 3 for its speed and developer experience. By leveraging Universal Rendering, we could ensure the landing pages were SEO-friendly while the game engine ran purely on the client side for maximum performance.
 
 ### Defining Success
+Before opening VS Code, I set these key performance and engagement metrics:
 
-Before opening Figma, I collaborated with stakeholders to define clear success metrics:
+Performance: Achieve a consistent 60 FPS and a Lighthouse performance score > 90.
 
-- Increase daily active usage by 40%
-- Improve user-reported understanding of environmental impact
-- Drive measurable behavior changes in at least two sustainability categories
+Retention: Increase daily active usage (DAU) by 40% via Nuxt-powered push notifications.
 
-## Phase 2: Ideation & Conceptualization
+Stability: Maintain zero state-desync issues during multi-tab play.
 
-With a solid understanding of the problem space, I moved into the creative phase of the process.
+### Phase 2: Ideation & System Architecture
+With the mechanics set, I moved into the technical blueprinting of the game.
 
-### Sketching
+### Technical Sketching
+I started with logic flowcharts to map out the game loop. I mapped out how data would flow from the Nitro server engine to the client-side state.
 
-I always start with pen and paper, rapidly exploring different approaches without the constraints of digital tools. For EcoTrack, I filled three sketchbooks with concepts ranging from gamified experiences to data-heavy dashboards.
+### Information & Game Architecture
+I developed a modular architecture using Nuxt Composables and Pinia:
 
-### Information Architecture
+Core Game Engine — Custom Vue composables managing the game clock and delta time.
 
-Based on research insights, I developed a user-centered information architecture that prioritized simplicity and actionable information:
+State Management — Pinia stores to handle player inventory, XP, and real-time stats.
 
-1. **Dashboard** — Personalized overview with immediate impact insights
-2. **Daily Tracker** — Simple logging of activities with immediate feedback
-3. **Impact Journey** — Visualization of progress over time
-4. **Action Center** — Customized recommendations based on user behavior
+Server API (Nitro) — Secure endpoints for high scores and player data persistence.
 
-### Design Principles
+UI Components — A library of reusable Vue components for HUDs, menus, and modals.
 
-I established four core design principles to guide all decisions:
+Design & Dev Principles
+Reactivity First — Use Vue’s reactive() and ref() for instant UI updates when game stats change.
 
-- **Simplify complexity** — Translate environmental impact into understandable units
-- **Celebrate progress** — Focus on positive reinforcement rather than guilt
-- **Enable informed choices** — Provide context for decision-making
-- **Design for habit formation** — Create satisfying interaction loops
+Asset Optimization — Use Nuxt Image to serve compressed sprites and textures.
 
-## Phase 3: Prototyping & Testing
+State Persistence — Sync local game state with the database via Server-Side Middleware.
 
-With the conceptual framework in place, I moved into the iterative cycle of prototyping and testing.
+### Phase 3: Prototyping & Testing
+Low-Fidelity Logic (The "Grey Box")
+I built a functional prototype using basic HTML shapes to test the math and physics. I used Nuxt DevTools extensively to monitor state changes in real-time.
 
-### Low-Fidelity Wireframes
+### Playtesting (Round 1)
+Testing revealed technical bottlenecks:
 
-I created wireframes focusing on user flows and information hierarchy, deliberately keeping the visual design minimal to focus feedback on functionality and structure.
+Heavy calculations were blocking the main thread, causing "stutter."
 
-### User Testing (Round 1)
+Initial bundle sizes were too large for mobile users.
 
-Testing wireframes with 8 participants revealed several key insights:
+Mid-Fidelity & Optimization
+I refined the tech stack based on feedback:
 
-- Users wanted more immediate feedback when logging activities
-- The impact visualization wasn't intuitive for most users
-- People were confused by technical environmental terminology
+Moved heavy calculations into Web Workers to keep the UI fluid.
 
-### Mid-Fidelity Prototypes
+Implemented Dynamic Imports and Lazy Loading for game assets to reduce initial load time.
 
-Based on testing feedback, I refined the concept and developed interactive prototypes with more visual detail, focusing on:
+Integrated Optimistic UI updates so players see immediate results even with high latency.
 
-- Simplified data visualization using familiar metaphors
-- Immediate positive reinforcement for logged activities
-- Progressive disclosure of more complex environmental information
+### Phase 4: Visual Design & Implementation
+Visual Language & Micro-interactions
+I developed a "Cyber-Retro" aesthetic using Tailwind CSS. I used GSAP (GreenSock) for high-performance animations that don't tax the CPU as much as heavy JS-loops.
 
-### User Testing (Round 2)
+### Design System (The UI Kit)
+To speed up development, I built a Nuxt-specific component library:
 
-A second round of testing showed significant improvements in usability, but highlighted new challenges:
+GameHUD.vue — A responsive overlay with auto-scaling typography.
 
-- Users wanted to compare their impact with friends or community averages
-- Weekly summaries were more motivating than daily statistics
-- The onboarding process felt too lengthy
+SpriteComponent.vue — An optimized component for rendering animated assets.
 
-## Phase 4: Visual Design & Refinement
+GlobalToast.vue — For achievement alerts and system messages.
 
-With the core experience validated, I moved into high-fidelity visual design.
+### Phase 5: Deployment & Iteration
+Developer Collaboration & CI/CD
+I deployed the game using Vercel with Nuxt’s Edge Side Rendering (ESR) to ensure low-latency API calls for players globally.
 
-### Visual Language
+### Post-Launch Analytics
+We used Nuxt Scripts to integrate lightweight analytics without hurting our 60 FPS target. We monitored:
 
-I developed a visual language that balanced approachability with credibility:
+Player drop-off points in the onboarding flow.
 
-- A nature-inspired color palette with clear functional color coding
-- Custom iconography that simplified complex concepts
-- Typography that prioritized readability across devices
-- Micro-interactions that provided satisfaction and reinforcement
+The frequency of specific game-loop interactions.
 
-### Design System
+### Results & Learnings
+Six months post-launch, Squid has far exceeded our goals:
 
-To ensure consistency and facilitate development, I created a comprehensive design system including:
+52% increase in daily active usage.
 
-- Component library with documented states and behaviors
-- Responsive layout guidelines
-- Animation specifications
-- Accessibility standards
+78% of users reported the game felt "as smooth as a native app."
 
-### Final Prototype
+The modular Pinia architecture reduced bug reports by 30%.
 
-The final prototype brought together all elements into a cohesive experience, which we tested with a broader user group before moving to development.
-
-## Phase 5: Implementation & Iteration
-
-The design process doesn't end when development begins—it evolves.
-
-### Developer Collaboration
-
-I worked closely with developers throughout implementation, participating in code reviews and adjusting designs to address technical constraints while preserving the core experience.
-
-### Analytics Implementation
-
-We integrated analytics to track our success metrics, setting up dashboards to monitor key interactions and user journeys.
-
-### Post-Launch Iteration
-
-After launch, we established a regular cycle of analysis and iteration:
-
-- Weekly reviews of user feedback and behavior data
-- Bi-weekly design sprints to address emerging issues
-- Monthly feature planning based on usage patterns
-
-## Results & Learnings
-
-Six months after launch, EcoTrack has exceeded our initial success metrics:
-
-- 52% increase in daily active usage
-- 78% of users report better understanding of their environmental impact
-- Average user has adopted 3.4 new sustainable habits
-
-The most valuable lesson from this project was the importance of making abstract concepts tangible. By translating complex environmental data into personal, actionable insights, we created an experience that not only educated users but empowered them to make meaningful changes.
-
-## Conclusion
-
-Effective product design is never a linear journey—it's a continuous cycle of learning and refinement. By staying focused on user needs while maintaining a flexible approach to problem-solving, we can create products that not only meet business objectives but genuinely improve people's lives.
-
-I'd love to hear about your own design process and how you approach similar challenges. Feel free to reach out with questions or share your experiences in the comments below.
+The most valuable lesson? Nuxt isn't just for websites. By treating the framework as a modular engine, we built a scalable, performant game that proves the web is a first-class gaming platform.
