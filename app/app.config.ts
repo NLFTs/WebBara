@@ -27,19 +27,14 @@ export default defineAppConfig({
     colorMode: false,
     links: [{
       'icon': 'i-simple-icons-discord',
-      'to': 'https://go.nuxt.com/discord',
+      'to': 'https://discord/Barabr0',
       'target': '_blank',
-      'aria-label': 'Nuxt on Discord'
-    }, {
-      'icon': 'i-simple-icons-x',
-      'to': 'https://go.nuxt.com/x',
-      'target': '_blank',
-      'aria-label': 'Nuxt on X'
+      'aria-label': 'my Discord'
     }, {
       'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/nuxt/ui',
+      'to': 'https://github.com/Barabr0',
       'target': '_blank',
-      'aria-label': 'Nuxt UI on GitHub'
+      'aria-label': 'my GitHub'
     }]
   }
 })
