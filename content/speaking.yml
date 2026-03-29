@@ -1,0 +1,25 @@
+links:
+  - label: Lihat GitHub
+    to: https://github.com/Barabr0
+    target: _blank
+  - label: Portfolio
+    to: "#"
+
+events:
+  - category: Conference
+    title: Perjalanan Menjadi Game Developer
+    date: 2024-01-10
+    location: Indonesia
+    url: https://example.com
+
+  - category: Live talk
+    title: Belajar 3D Modeling dengan Blender
+    date: 2024-02-15
+    location: Online
+    url: https://example.com
+
+  - category: Podcast
+    title: Ngoding Web & Game dengan Laravel dan GitHub
+    date: 2024-03-20
+    location: YouTube
+    url: https://example.com
