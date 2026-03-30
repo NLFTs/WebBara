@@ -25,16 +25,16 @@ export default defineAppConfig({
   footer: {
     credits: `Built with Nuxt UI • © ${new Date().getFullYear()}`,
     colorMode: false,
-    links: [{
-      'icon': 'i-simple-icons-discord',
-      'to': 'https://discord/Barabr0',
-      'target': '_blank',
-      'aria-label': 'my Discord'
-    }, {
-      'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/Barabr0',
-      'target': '_blank',
-      'aria-label': 'my GitHub'
+    links: [
+     {
+      icon: 'i-simple-icons-github',
+      to: 'https://github.com/Barabr0',
+      target: '_blank'
+    },
+    {
+      icon: 'i-simple-icons-discord',
+      to: 'https://discord.com/users/Barabr0',
+      target: '_blank'
     }]
   }
 })
