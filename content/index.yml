@@ -4,6 +4,11 @@ seo:
 title: "Hey, I'm Bara game Developer"
 description: "I create digital experiences and I am a beginner game developer and I am an independent programmer in php and gdscript programming languages."
 hero:
+  links:
+    - label: GitHub
+      icon: i-simple-icons-github
+      to: https://github.com/barabr0
+      target: _blank
   images:
     - src: /hero/random-1.avif
       alt: Random Image 1
