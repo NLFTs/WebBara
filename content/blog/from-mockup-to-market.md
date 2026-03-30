@@ -1,115 +1,102 @@
 ---
-title: "From my first idea to Learning games : The process of making my first game"
-description: A detailed explanation of my game creation method, from initial research to final delivery, with practical tips for ideas at every stage.
+title: "Dari sketsa hingga menjadi karya komersial: Langkah demi langkah perakitan game perdana"
+description: Tinjauan komprehensif mengawal tahapan awal kreasi permainan dari riset ide fundamental sampai rilis versi purwarupa akhir, dibekali beragam tips segar untuk *developer intuitif*.
 date: 2025-04-23
 image: https://images.pexels.com/photos/1050312/pexels-photo-1050312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 minRead: 10
 author:
-  name: Marsha Bara Suwarna
+  name: Web Bara
   avatar:
     src: https://avatars.githubusercontent.com/u/228843429?v=4&size=64
-    alt: Marsha Bara Suwarna
+    alt: Web Bara
 ---
 
-Creating a successful game isn't about selling an idea—it's about developing a creative mindset that adapts to the unique challenges of each project. After refining my approach across dozens of projects, I've developed a process that consistently delivers results while still allowing room for creativity and iteration.
+Menyusun portofolio game yang sukses tak sekadar melontar gagasan—namun seiring dengan pengembangan wawasan kreatif yang cepat tanggap bertransisi mengolah tantangan kompleks setiap lini pengerjaannya. Pascalaga panjang memoles manuver di atas tumpukan proyek, saya sukses mengerucutkan sebuah proses berkesinambungan yang mendulang jejak keberhasilan tanpa mengabaikan sentuhan estetik dan siklus revisi.
 
-In this article, I'll cover my game creation process, from initial discovery to handover to developers, using my recent work on the Squid app as a case study.
+Halaman ini akan menghidangkan sekelumit fase kelahiran game andalan saya, diawali dari tahap eksplorasi wawasan sebelum dilelang sebagai prototipe ke ranah peluncuran tim, membawakan serpihan catatan harian eksklusif proyek aplikasi Squid sebagai pedoman praktis.
 
-### Phase 1: Discovery & Technical Research
-Every great game starts with a loop. For Squid, our challenge was to build a compelling web-based experience that felt snappy and responsive, avoiding the "laggy browser game" stigma.
+### Tahap 1: Riset dan Eskalasi Arsitektur
+Seumpama mesin rotasi roda yang bergemuruh di latar lakon raksasa. Untuk lakon *Squid* sendiri, batu sandungannya terlampau terang: membangun sebuah panggung adu peramban (web-based) yang spontan bersambut tanpa dikepung stereotip miring "jeda peramban berkedut".
 
-### User Interviews
-I conducted sessions with seven core gamers to understand their habits. A major pain point was "friction"—players hate waiting for long loading screens just to play a quick session.
+### Jajak Pendapat
+Saya meluangkan segenap atensi mendengar ocehan ketujuh insan penggila setia game guna meresapi habitus alam bawah sandarnya. Petaka utamanya bergulir kepada tabiat memuakkan, sungguh, mereka keburu mendongkol menunggu gulir pemuatan tatkala mengidamkan sesi laga sesingkat serputan kopi.
 
-"I want a game that's fun and accessible instantly, whether I'm on my phone or desktop." — Interview participant
+"Paling tidak menyajikan hiburan renyah sedetik setelah peramban seluler mapun meja diklik, tiada kompromi" — Secuplik ujar salah satu pencicip di persidangan interviu.
 
-### Tech Stack Benchmarking
-I analyzed existing web games and chose Nuxt 3 for its speed and developer experience. By leveraging Universal Rendering, we could ensure the landing pages were SEO-friendly while the game engine ran purely on the client side for maximum performance.
+### Pemetaan Struktur *Stack*
+Seusai menghikmati keluh kesah jajaran game daring purba lantas mata saya nanar tertambat pada kerangka Nuxt 3 dengan alasan keprogresifan kecepatan sekaligus ergonomis kemanjaan si ahli koding. Memanfaatkan rendering berbasis wujud terintegrasi (Universal Rendering) membuat kami mampu menyodorkan jaminan halaman parasnya berkinerja mutlak di arena telusur (*SEO-friendly*) tatkala mesin pengatur permainan berdegup sendirian mengeruk tenaga peramban perakitnya (*Client-side rendering*) menuju gerak performa klimaks.
 
-### Defining Success
-Before opening VS Code, I set these key performance and engagement metrics:
+### Resolusi Kemenangan
+Jauh hari menahan diri membuka portal VS Code, kami mufakat menancapkan standar tonggak batas kinerja hingga penahan rasionisasi keterikatan target berikut:
 
-Performance: Achieve a consistent 60 FPS and a Lighthouse performance score > 90.
+Kinerja mesin: Memborong konsistensi bingkai di 60 FPS dan menyapu skor 90 berbekal metrik cerminan mercusuar Lighthouse.
 
-Retention: Increase daily active usage (DAU) by 40% via Nuxt-powered push notifications.
+Atensi Keterlekatan: Merajut kenaikan pelawat penjelajah harian aktif (DAU) bertumbuh melampaui raihan 40% beramunisikan fitur bidikan notifikasi Nuxt.
 
-Stability: Maintain zero state-desync issues during multi-tab play.
+Elastisitas Stabil: Bertahan paripurna tanpa derita peluruhan siklus data bilamana diadu dalam gempuran tumpuk jeda pergantian layar navigasi berlapis.
 
-### Phase 2: Ideation & System Architecture
-With the mechanics set, I moved into the technical blueprinting of the game.
+### Tahap 2: Fase Injeksi Cita Rasa dan Cetak Biru Jaringan
+Berbekal persetujuan final pakem manuver permainan, pelan-pelan transisi tergeser masuk menyibak rimbunnya peta tata tertib logika permainan tersebut.
 
-### Technical Sketching
-I started with logic flowcharts to map out the game loop. I mapped out how data would flow from the Nitro server engine to the client-side state.
+### Jentik Grafis Pemetaan
+Kembara mula-mula dengan goresan sederhana denah algoritma membidik pergelutan simpul rotasi alur ritmenya (game loop). Hal in teramat vital menjabarkan sinkronisasi silang antara aliran darah data via jantung kemudi server Nitro guna merengkak singgasana state pengguna akhir di belahan pelayar masing-masing.
 
-### Information & Game Architecture
-I developed a modular architecture using Nuxt Composables and Pinia:
+### Rekayasa Arsitektur Panggung Data
+Saya berhasil mengawal konstruksi penyangga terpisah mendaur perbendaharaan racikan komando composable milik Nuxt berdampingan sistem tata kelola **Pinia**:
 
-Core Game Engine — Custom Vue composables managing the game clock and delta time.
+Mesin Game Semesta — Ragam Vue *composable* memegang tuas komando argo irama hitungan jeda bingkai sekunder (delta time).
 
-State Management — Pinia stores to handle player inventory, XP, and real-time stats.
+Struktur Penyimpan Status (*State Management*) — Kantong Pinia menjadi lumbung data melacak deretan perkakas, tumpukan pencapaian, beserta akumulasi statistik real-time sang prajurit.
 
-Server API (Nitro) — Secure endpoints for high scores and player data persistence.
+Server API (Nitro) — Persimpangan portal berpagar kokoh memfasilitasi rekaman pencatatan gemilang tingkat raihan serta cadangan pengawalan berkas otentik.
 
-UI Components — A library of reusable Vue components for HUDs, menus, and modals.
+Komponen Antarmuka (UI Components) — Rangkaian balok fondasi material komponen Vue mengelola bilah angka, jajaran menu gantung, maupun pop-up luhur.
 
-Design & Dev Principles
-Reactivity First — Use Vue’s reactive() and ref() for instant UI updates when game stats change.
+Cetak Biru Dev dan Rancang Dasar Desain
+Reaktivitas Garda Terdepan — Manfaatkan kemampuan taktis reaktivitas (reactive(), ref()) Vue guna menyuntikkan ledakan umpan visualisasi yang tidak sempat merem melek.
 
-Asset Optimization — Use Nuxt Image to serve compressed sprites and textures.
+Kompresi Kekayaan Grafis — Giring pemakaian fasilitas canggih dari Nuxt Image menampi taburan tekstur sekaligus resolusi lukisan hingga tatanan ringkas nan ringan tanpa bopeng sedikit pun.
 
-State Persistence — Sync local game state with the database via Server-Side Middleware.
+Reservasi Basis Data — Padankan lamat sinkronis status permainan gawai memeluk pangkalan statistik global berlapis gempuran perlindungan khusus Server-Side Middleware tangguh.
 
-### Phase 3: Prototyping & Testing
-Low-Fidelity Logic (The "Grey Box")
-I built a functional prototype using basic HTML shapes to test the math and physics. I used Nuxt DevTools extensively to monitor state changes in real-time.
+### Tahap 3: Uji Sketsa Progresif (Prototipe)
+Dapur Cincang Ketajaman Logika Mentah ("Grey Box")
+Rancangan tanding mula diurai berkarpetkan gumpalan bentukan dasar siluet elemen HTML standar, murni disorong untuk sekadar menantang kematangan persinggungan hukum kalkulus fisisnya. Melimpah rebekah anugerah perangkat perkakas cek (*DevTools*) racikan Nuxt meringkus kealpaan data riil saat adegan tengah bergulir terampil.
 
-### Playtesting (Round 1)
-Testing revealed technical bottlenecks:
+### Pendar Uji Nyali Part 1 (Ronde Pengukuran Permainan)
+Tabuhan irama perdana telanjang membongkar belenggu keterpurukannya.
+Kalkulasi algoritma sinting memojokkan lintasan inti sehingga menghasilkan jeda terguncang nan memilukan ("stutter").
+Kargo muatan perintisnya masih sedemikian menyesakkan menyesaki pernapasan koneksi tipis keping mobilitas.
 
-Heavy calculations were blocking the main thread, causing "stutter."
+Penyegaran Modul Setengah Matang nan Prima
+Racikan mesin ini kelak diamplas lagi dilandasi perihal tabiat rekam jejak masukan itu:
+Giring pertapa perumusan kalkulus menyampingi laju gawai pekerja di singgasana klandestin peramban rahasia (*Web Workers*) hingga membebastugaskan kemilau UI bersenandung lancang.
+Menambal penyusunan impor gubahan berkala (*Dynamic Import*), bersembunyi menangguhkan sisa puing asupan gambar (*Lazy-loading*) untuk mencukur ludes jeda awalan peluncuran permainan.
+Integrasi pemampatan modifikator wilis semu *(Optimistic UI)* sekejap melayani tanggapan kilau aksi biarpun tertikam deru latensi jaring pelik dari entah-berantah.
 
-Initial bundle sizes were too large for mobile users.
+### Fase 4: Integrasi Perwajahan Estetetis (Implementasi Grafis)
+Seluk-beluk Basa Tubuh Minor dan Pesona Visualisasi
+Lontaran inspirasi "Cyber-Retro" bersumbu pilar penyangga penataan gaya Tailwind CSS terlahir cemerlang dalam pelukan animasi lincah balutan GSAP menawan—terhindar menohok paru pertahanan *core computation* di balik sengit rotasi sirkulasi Java-script tradisional.
 
-Mid-Fidelity & Optimization
-I refined the tech stack based on feedback:
+### Ensiklopedia Perwajahan Modul Desain (UI Kit)
+Merajut rentang tenggat, maka saya menetas lumbung *library component* mandiri porsi Nuxt saja:
+`GameHUD.vue` - Susunan transparan pembidik angka berlapis tata rupa adaptif pengubahan fontase otomatistis.
+`SpriteComponent.vue` - Corat-coret modul perancangan aset yang melompat lincah secara berirama.
+`GlobalToast.vue` - Layanan penyematan pamflet peringatan sukses memecah belah target tantangan dan segerombol petuah sistem pendamping setia.
 
-Moved heavy calculations into Web Workers to keep the UI fluid.
+### Babak 5 Pengembangan Perdana dan Ekskalasi Pembaharuan
+Singkronisator Tim Pembalap Jaring Urat Nadi (CI/CD)
+Proyek game diarak mengudara membungkus layanan Vercel lewat hembusan taktis Edge-Side Rendering demi mencangkok simpul api (*API calls*) tercepat minim halang-rintang menyapa semesta pemain lintasan darat buana seantero raya ini.
 
-Implemented Dynamic Imports and Lazy Loading for game assets to reduce initial load time.
+### Telisik Angka Purnapendar Peluncuran Laga
+Merangkul dukungan sekatan perkakas pelacak teramat ringan Nuxt Scripts untuk menggenggam cengkeraman metrik sejati nir menombak keruntuhan target idaman 60 FPS kami mendapati:
+Titik lemah keputusasaan para kombatan membuang perangkat sekalian menatap tahap awal pembekalan sandi.
+Kepadatan kuantitas putaran lintasan terekam di balik jeruji simpul *game-loop* idaman.
 
-Integrated Optimistic UI updates so players see immediate results even with high latency.
+### Resolusi Hikmah Permainan
+Melintas 6 purnama purna edar tayang komersial awal Squid telah menggondol sasaran di pucuk awang:
+Loncatan impresif 52% keaktifan pendaftar silih berganti kesehariannya.
+Respon angket kepuasan di angka raksasa 78% bertutur sejuknya pementasan mulus persis gelimpangan suguhan terstruktur (*native-app*).
+Desain arsitektur mandiri (modular) sang Pinia mendebak rekor kebocoran *bug* ambrol ke selokan pelaporan terpangkas habis sebanyak 30% keliru.
 
-### Phase 4: Visual Design & Implementation
-Visual Language & Micro-interactions
-I developed a "Cyber-Retro" aesthetic using Tailwind CSS. I used GSAP (GreenSock) for high-performance animations that don't tax the CPU as much as heavy JS-loops.
-
-### Design System (The UI Kit)
-To speed up development, I built a Nuxt-specific component library:
-
-GameHUD.vue — A responsive overlay with auto-scaling typography.
-
-SpriteComponent.vue — An optimized component for rendering animated assets.
-
-GlobalToast.vue — For achievement alerts and system messages.
-
-### Phase 5: Deployment & Iteration
-Developer Collaboration & CI/CD
-I deployed the game using Vercel with Nuxt’s Edge Side Rendering (ESR) to ensure low-latency API calls for players globally.
-
-### Post-Launch Analytics
-We used Nuxt Scripts to integrate lightweight analytics without hurting our 60 FPS target. We monitored:
-
-Player drop-off points in the onboarding flow.
-
-The frequency of specific game-loop interactions.
-
-### Results & Learnings
-Six months post-launch, Squid has far exceeded our goals:
-
-52% increase in daily active usage.
-
-78% of users reported the game felt "as smooth as a native app."
-
-The modular Pinia architecture reduced bug reports by 30%.
-
-The most valuable lesson? Nuxt isn't just for websites. By treating the framework as a modular engine, we built a scalable, performant game that proves the web is a first-class gaming platform.
+Satu pepatah mutiara tersisa dari jagat pengembangan? Nuxt murni sungguh nir-eksklusif bagi sekadar laman web pajangan warta. Memperlakukannya sewajarnya kerangka fondasi permesinan, sebuah galangan wadah permainan tereksekusi, berskala megah mumpuni menyenggol taring deretan *game pixel* peramban modern nan brilian sesungguhnya.

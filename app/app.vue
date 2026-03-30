@@ -13,12 +13,16 @@ useHead({
     { rel: 'icon', href: '/favicon.ico' }
   ],
   htmlAttrs: {
-    lang: 'en'
+    lang: 'id'
   }
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Nuxt Portfolio Template',
+  titleTemplate: '%s - Web Bara | Developer Intuitif & Game Pixel',
+  ogSiteName: 'Web Bara',
+  ogTitle: '%s - Web Bara',
+  description: 'Portofolio Web Bara, seorang developer intuitif yang ahli di bidang game pixel.',
+  ogDescription: 'Portofolio Web Bara, seorang developer intuitif yang ahli di bidang game pixel.',
   ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png',
   twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png',
   twitterCard: 'summary_large_image'

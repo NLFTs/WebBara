@@ -1,8 +1,8 @@
 seo:
-  title: "Hey, I'm Bara game Developer"
-  description: "Welcome to my portfolio! Hey, I'm Bara game Developer. I specialize in create digital experiences and I am a beginner game developer and I am an independent programmer in php and gdscript programming languages."
-title: "Hey, I'm Bara game Developer"
-description: "I create digital experiences and I am a beginner game developer and I am an independent programmer in php and gdscript programming languages."
+  title: "Halo, Saya Web Bara - Developer Intuitif & Game Pixel"
+  description: "Selamat datang di portofolio saya! Saya Web Bara, seorang developer intuitif. Saya berfokus pada pembuatan pengalaman digital yang mendalam serta pengembangan game pixel. Saya merupakan pemrogram independen dalam bahasa PHP dan GDScript."
+title: "Halo, Saya Web Bara, Pengembang Game"
+description: "Saya seorang developer intuitif yang ahli menciptakan pengalaman digital interaktif, sekaligus mengembangkan game pixel secara independen dengan bahasa pemrograman PHP dan GDScript."
 hero:
   links:
     - label: GitHub
@@ -11,76 +11,76 @@ hero:
       target: _blank
   images:
     - src: /hero/random-1.avif
-      alt: Random Image 1
+      alt: Gambar Acak 1
     - src: /hero/random-2.avif
-      alt: Random Image 2
+      alt: Gambar Acak 2
     - src: /hero/random-3.avif
-      alt: Random Image 3
+      alt: Gambar Acak 3
     - src: /hero/random-4.avif
-      alt: Random Image 4
+      alt: Gambar Acak 4
     - src: /hero/random-5.avif
-      alt: Random Image 5
+      alt: Gambar Acak 5
     - src: /hero/random-6.avif
-      alt: Random Image 6
+      alt: Gambar Acak 6
     - src: /hero/random-7.avif
-      alt: Random Image 7
+      alt: Gambar Acak 7
     - src: /hero/random-8.avif
-      alt: Random Image 8
+      alt: Gambar Acak 8
     - src: /hero/random-9.avif
-      alt: Random Image 9
+      alt: Gambar Acak 9
 about:
-  title: "About Me"
+  title: "Tentang Saya"
   description: |
-   As a budding game developer and independent programmer, I'm building a solid foundation in game development with a focus on exploring ideas, game mechanics, and player experience. I'm proficient in PHP for web-based logic and systems development, and GDScript as the primary language for building games using the Godot Engine.
-
-    As an independent developer, I'm accustomed to working independently—from concept design and coding to iteration and debugging. My approach emphasizes continuous learning, technical experimentation, and the application of user-centered design principles to game worlds, with the goal of creating simple, functional, yet meaningful gaming experiences.
+    Sebagai developer pemula dan programmer independen, saya membangun fondasi kuat di ranah pengembangan game dengan mengeksplorasi ragam ide, mekanik game, serta pengalaman pemain yang mendalam. Saya mahir dalam menggunakan logika berbasis web dengan PHP dan menggunakan GDScript sebagai bahasa utama untuk membangun game pixel impian menggunakan Godot Engine.
+    
+    Menjadi pengembang independen berarti bekerja sendiri sepenuhnya—mulai dari konsep desain, penulisan kode sumber, hingga tahap iterasi serta debugging. Pendekatan seorang developer intuitif menegaskan perlunya belajar secara berkelanjutan, bereksperimen dari aspek teknis, hingga menyulam prinsip interaksi yang nyaman ke dalam dunia game demi terciptanya sebuah rekam jejak yang solid.
 experience:
-  title: Work Experience
+  title: Pengalaman Kerja
   items:
-    - position: "Brand Designer at"
-      date: "2025 - Present"
+    - position: "Desainer Merek di"
+      date: "2025 - Sekarang"
       company:
         name: Laravel
         logo: "i-simple-icons-laravel"
         url: "https://laravel.com"
         color: "#8B0000"
-    - position: "Assets Designer at"
-      date: "2025 - present"
+    - position: "Desainer Aset di"
+      date: "2025 - Sekarang"
       company:
         name: Blender
         logo: "i-simple-icons-blender"
         url: "https://blender.org"
         color: "#FF6363"
-    - position: "NLFTs comunity at"
-      date: "present"
+    - position: "Komunitas NLFTs"
+      date: "Sekarang"
       company:
         name: NLFTs
         logo: "https://avatars.githubusercontent.com/u/252723835?s=200&v=4"
         url: "https://github.com/NLFTs"
         color: "#000080"
-    - position: "Join Community programmer at"
-      date: "2024 - present"
+    - position: "Bergabung dengan Programer Komunitas"
+      date: "2024 - Sekarang"
       company:
         name: GitHub
         logo: "i-simple-icons-github"
         url: "https://github.com"
         color: "#00000"
 testimonials:
-  - quote: "Emma's approach to UX design completely transformed our product. She has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics."
+  - quote: "Kehadiran Web Bara mentransformasikan struktur aplikasi kami. Ada keseimbangan estetika yang luar biasa yang diselaraskan dengan kesederhanaan fungsi. Desain ulangnya tidak hanya keren namun mendongkrak konversi pengeluaran pada metrik platform!"
     author:
       name: 'Sarah Chen'
       description: 'Product Director at Bloom Finance'
       avatar:
         src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
         srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Working with Emma was the best decision we made for our startup. She didn't just deliver designs—she challenged our assumptions, conducted thorough user research, and created an experience that truly resonated with our audience. Her technical knowledge of front-end development meant the handoff to our engineering team was seamless."
+  - quote: "Bekerja dengannya adalah keputusan terbaik bagi startup kami. Seorang developer intuitif yang tak hanya menghantarkan desain ke ranah implementasi namun juga menantang asumsi lama, menggelar riset mendalam, serta membangkitkan gaung game pixel kami agar beresonansi murni bersama segenap audiens!"
     author:
       name: 'Michael Rodriguez'
       description: 'Co-founder of Wavelength Music'
       avatar:
         src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
         srcset: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Emma stands out in her ability to translate complex sustainability data into intuitive interfaces. Her work on EcoTrack wasn't just visually stunning—it fundamentally changed how our users interact with environmental information. She approaches each problem with both creativity and analytical rigor, which is exactly what we needed."
+  - quote: "Karya Bara menonjol karena kapabilitasnya menyederhanakan antarmuka yang begitu kompleks menjadi sangat humanis. Keterlibatannya mengubah rupa industri teknologi hijau dan menunjukkan pendekatan interaksi visual game pixel paling elegan."
     author:
       name: 'Dr. Aisha Johnson'
       description: 'Chief Innovation Officer at GreenTech Solutions'
@@ -88,42 +88,42 @@ testimonials:
         src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
         srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
 blog:
-  title: "Latest Articles"
-  description: "Some of my recent thoughts"
+  title: "Artikel Terbaru"
+  description: "Buku harian pemikiran saya"
 faq:
-  title: Frequently Asked Questions
-  description: Answers to common questions about my process and services.
+  title: Pertanyaan yang Sering Diajukan
+  description: Temukan jawaban umum seputar penawaran, proses di balik layar, serta keseharian saya.
   categories:
-    - title: Services & Process
+    - title: Layanan & Proses
       questions:
-        - label: What services do you offer?
+        - label: Layanan apa yang Anda tawarkan?
           content: |
-            I specialize in game development.
-        - label: What is your design process like?
+            Saya berspesialisasi dalam merancang game pixel, merakit desain antarmuka, hingga memproduksi skrip permainan mandiri lewat Godot dan PHP.
+        - label: Seperti apa proses pengerjaan Anda?
           content: |
-            My process is collaborative and iterative, typically involving stages like Discovery & Research, Ideation & Prototyping, User Testing, Visual Design, and close collaboration with development teams during implementation. I tailor the process based on project needs, always focusing on user-centered solutions.
-        - label: Do you work with startups?
+            Sebagai seorang developer intuitif, saya selalu melibatkan iterasi kolaboratif mulai dari tahap pencarian inspirasi, pemetaan desain prototipe visual, hingga kolaborasi intens kala pengerjaan final pada kode arsitektur.
+        - label: Apakah Anda bekerja sama dengan Perusahaan Startup?
           content: |
-            Absolutely! I enjoy working with startups to help shape their product vision and create user-friendly interfaces from the ground up. I can adapt my process to fit the fast-paced startup environment.
-    - title: Pricing & Timelines
+            Pastinya! Menyusun dan membayangkan struktur dasar game pixel inovatif sejalan dengan idealisme banyak anak muda yang giat berkarya.
+    - title: Harga & Waktu
       questions:
-        - label: How much does a project typically cost?
+        - label: Berapa taksiran biayanya?
           content: |
-            Project costs vary based on scope, complexity, features, and timeline. For comprehensive UX/UI design and front-end development projects, my engagements typically start around $5,000, with average projects ranging between $8,000 and $25,000. For consulting or specific design tasks, my day rate is $700.
-        - label: What are your payment terms?
+            Secara esensial bergantung terhadap ruang lingkup permainan, rumitnya level desain serta tenggat waktu pelaksanaan. Konsultasikan dengan saya lebih lanjut untuk penawaran mendetail.
+        - label: Bagaimana sistem pembayarannya?
           content: |
-            I generally require a 40% deposit to schedule the project and begin work, with the remaining 60% due upon successful project completion and delivery. I accept payments via bank transfer and Stripe.
-        - label: How long does a typical project take?
+            Untuk jadwal peluncuran game pixel maupun portofolio yang matang, uang muka sebesar 40% menjadi tiket dimulainya eksplorasi sketsa bersama. Sisa pembayaran dilakukan pasca penyelesaian karya.
+        - label: Butuh waktu berapa lama?
           content: |
-            Timelines depend heavily on the project's scope and complexity. Smaller projects might take 3-4 weeks, while larger, more involved projects can range from 2 to 4 months. I always provide a detailed timeline estimate after the initial discovery phase.
-        - label: Do you offer retainers or ongoing support?
+            Skala kecil biasanya memakan waktu sekitaran 3 hingga 4 minggu lamanya. Fitur interaktif kompleks mungkin memakan paruh waktu peluncuran yang berbeda.
+        - label: Apakah ada jaminan komitmen atau perawatan purnajual?
           content: |
-            Yes, for clients needing ongoing design support, feature development, or maintenance, I offer monthly retainer options tailored to specific needs. Let's discuss if this is something you're interested in.
-    - title: About Me
+            Ada, baik bagi yang membutuhkan asistensi arsitektur konten, adaptasi web mandiri, hingga pengawalan pemeliharaan server permainan. Tentu saja, kontrak retain bulanan akan kami rumuskan sesuai tingkat kemendesakan dan kebutuhan fungsionalitasnya.
+    - title: Tentang Saya
       questions:
-        - label: What do you enjoy most about your work?
+        - label: Hal apa yang amat dinikmati selama ini?
           content: |
-            I love the challenge of solving complex problems through design and technology. It's incredibly rewarding to see people interact with something I've created and find it genuinely useful and easy to navigate. Bridging the gap between user needs and technical possibilities is what truly excites me.
-        - label: What are your hobbies outside of work?
+            Membedah permasalahan kompleks hingga menemukan kemurnian jawaban tersembunyinya. Sebuah hadiah luar biasa bagi saya melihat orang-orang berhasil merasuk lalu nyaman menggunakan solusi digital buatan saya. Menjembatani jurang tajam antara angan-angan ke target spesifik di tengah keterbatasan teknologi. Itulah antusiasme yang saya senandungkan dari hari ke hari demi membangkitkan game pixel luar biasa!
+        - label: Adakah hobi lain jika Anda tidak sedang menyusun serangkaian baris kode?
           content: |
-            When I'm not designing or coding, I enjoy playing game and watching streaming.
+            Hanya asyik merenung, memantau *streaming* daring dan sejenak bermain video game berlayar temaram di pojokan ruang.

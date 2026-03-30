@@ -18,6 +18,13 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2024-11-01',
 
+  site: {
+    url: 'https://web-bara.com',
+    name: 'Web Bara - Developer Intuitif & Game Pixel',
+    description: 'Web Bara merupakan portofolio dari developer intuitif yang berfokus pada game pixel dan pengembangan web.',
+    defaultLocale: 'id'
+  },
+
   nitro: {
     prerender: {
       routes: [
