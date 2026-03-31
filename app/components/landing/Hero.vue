@@ -107,10 +107,7 @@ defineProps<{
         >
           <UButton v-bind="page.hero.links[0]" />
           <UButton
-            :color="global.available ? 'success' : 'error'"
-            variant="ghost"
-            class="gap-2"
-           
+
           >
             <template #leading>
               <span class="relative flex size-2">

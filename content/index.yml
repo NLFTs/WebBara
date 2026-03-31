@@ -4,11 +4,6 @@ seo:
 title: "Halo, Saya  Bara, Pengembang Game"
 description: "Saya seorang developer intuitif yang ahli menciptakan pengalaman digital interaktif, sekaligus mengembangkan game pixel secara independen dengan bahasa pemrograman PHP dan GDScript."
 hero:
-  links:
-    - label: GitHub
-      icon: i-simple-icons-github
-      to: https://github.com/barabr0
-      target: _blank
   images:
     - src: /hero/random-1.avif
       alt: Gambar Acak 1
