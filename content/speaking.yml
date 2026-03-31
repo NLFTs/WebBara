@@ -1,10 +1,3 @@
-links:
-  - label: Lihat GitHub
-    to: https://github.com/Barabr0
-    target: _blank
-  - label: Portofolio
-    to: "#"
-
 events:
   - category: Konferensi
     title: Perjalanan Menjadi Game Developer
