@@ -1,14 +1,14 @@
 ---
 title: Ilmu Performa pada Lingkungan Web Gaming
-description: Menyibak rahasia optimasi teknis web bara dan kemampuan server Nitro merangkul kepuasan bermain yang solid di ekosistem peramban.
+description: Menyibak rahasia optimasi teknis web game developer intiutit dan kemampuan server Nitro merangkul kepuasan bermain yang solid di ekosistem peramban.
 date: 2025-05-10
 image: https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 minRead: 7
 author:
-  name: Web Bara
+  name:  Bara
   avatar:
     src: https://avatars.githubusercontent.com/u/228843429?v=4&size=64
-    alt: Web Bara
+    alt:  Bara
 ---
 
 Pemfungsian kinerja (performa) merupakan pahawalan tak kasat mata dari serangkaian perwajahan desain game. Ia adalah perkakas andalan saya untuk merebut loyalitas para pemain, sayangnya elemen krusial ini kerap dikesampingkan hingga kelumpuhan interaksi terjadi (*lagging*). Setelah menggelar rangkaian uji ketahanan pada rakitan mesin **Squid** menyebrangi berbagai strategi *rendering*, saya berhasil mendulang tabulasi akurat betapa kecepatan respons teknis dapat dengan drastis meningkatkan kebahagiaan para pemujanya.

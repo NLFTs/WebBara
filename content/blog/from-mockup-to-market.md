@@ -5,10 +5,10 @@ date: 2025-04-23
 image: https://images.pexels.com/photos/1050312/pexels-photo-1050312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 minRead: 10
 author:
-  name: Web Bara
+  name:  Bara
   avatar:
     src: https://avatars.githubusercontent.com/u/228843429?v=4&size=64
-    alt: Web Bara
+    alt:  Bara
 ---
 
 Menyusun portofolio game yang sukses tak sekadar melontar gagasan—namun seiring dengan pengembangan wawasan kreatif yang cepat tanggap bertransisi mengolah tantangan kompleks setiap lini pengerjaannya. Pascalaga panjang memoles manuver di atas tumpukan proyek, saya sukses mengerucutkan sebuah proses berkesinambungan yang mendulang jejak keberhasilan tanpa mengabaikan sentuhan estetik dan siklus revisi.

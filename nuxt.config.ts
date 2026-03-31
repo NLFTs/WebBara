@@ -20,8 +20,8 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://web-bara.com',
-    name: 'Web Bara - Developer Intuitif & Game Pixel',
-    description: 'Web Bara merupakan portofolio dari developer intuitif yang berfokus pada game pixel dan pengembangan web.',
+    name: ' Bara - Developer Intuitif & Game Pixel',
+    description: ' Bara merupakan portofolio dari developer intuitif yang berfokus pada game pixel dan pengembangan web.',
     defaultLocale: 'id'
   },
 
