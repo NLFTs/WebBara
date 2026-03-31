@@ -5,7 +5,6 @@ export default defineAppConfig({
       light: 'https://avatars.githubusercontent.com/u/228843429?v=4&size=64',
       alt: 'My profile picture'
     },
-    meetingLink: 'https://cal.com/',
     email: 'ui-pro@nuxt.com',
     available: true
   },
